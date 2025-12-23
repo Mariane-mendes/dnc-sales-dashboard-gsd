@@ -2,12 +2,12 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import { GlobalSyle, lighTheme } from './styles/'
+import { GlobalStyle, lightTheme } from '@/pages/styles'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider theme={lighTheme}>
-      <GlobalSyle />
+    <ThemeProvider theme={lightTheme}>
+      <GlobalStyle />
       <App />
     </ThemeProvider>
   </React.StrictMode>
